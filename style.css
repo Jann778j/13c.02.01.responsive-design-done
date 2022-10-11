@@ -1,0 +1,373 @@
+/* Tip, copy paste from 13c.01.01 & 13c.01.02 to get fonts and colors up and running ... */
+
+/* nav */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Color Properties */
+:root {
+  --color-darker: #813e34;
+  --color-dark: #994c41;
+  --color-light: #cad4dc;
+  --color-lighter: #dcd1b4;
+  --color-lighter2: #f4f5e8;
+
+  /* you could add an accent color for CTAs and anchor tags ;-) */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Noto Serif Display", serif;
+  margin-bottom: 1rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.052rem;
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-lighter);
+}
+
+h2 {
+  font-size: 1.953rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  color: var(--color-darker);
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-darker);
+}
+
+p {
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin: 2rem;
+  text-align: center;
+}
+nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-darker);
+}
+button:hover a:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0px 1rem;
+}
+
+img {
+  max-width: 100%;
+  min-height: 390px;
+}
+
+header {
+  grid-column: 1/4;
+  width: 100%;
+  max-height: 100vh;
+  min-height: 100vh;
+  background-image: url(IMG_8439.JPG);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.header_text,
+.header_button {
+  /* margin: 4rem; */
+  margin: 2rem;
+  text-align: center;
+}
+
+.advantages_cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.advantages_card {
+  max-width: 300px;
+
+  border-radius: 2px;
+  min-height: 200px;
+  background-color: var(--color-lighter2);
+}
+
+.advantages_card_text {
+  margin: 20px;
+}
+#product {
+  margin: 3rem;
+  gap: 4rem;
+}
+.sectioncolor {
+  background-color: var(--color-light);
+}
+
+.highlight {
+  background-color: var(--color-lighter2);
+}
+
+h2 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.highlight_small_cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hightligt_button {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.team_ {
+  gap: 3rem;
+  margin: 5rem;
+}
+
+.team_graphics1 {
+  max-height: 400px;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.team_graphics2 {
+  max-height: 400px;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.team_text1 {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.team_text2 {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+#contact_form {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  gap: 2rem;
+
+  margin: 1rem;
+}
+
+#contact {
+  background-color: var(--color-lighter2);
+}
+
+.form_group1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.form_group2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.form_group3 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column: 1/3;
+  grid-row: 2/5;
+}
+
+/* .team_graphics1 {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(haj.JPG);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.team_graphics2 {
+  width: 100%;
+  min-height: 80vh;
+  background-image: url(haj.JPG);
+  background-size: cover;
+  /* background-position: 50% 50%; */
+/* } */
+
+/* #message {
+  height: 150px;
+  width: 400px;
+} */
+
+.form_group4 {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+footer {
+  /* margin: 2rem; */
+  display: flex;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--color-light);
+}
+
+.footer {
+  display: flex;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer a {
+  color: var(--color-darker);
+}
+
+li {
+  list-style: none;
+}
+
+#contact {
+  text-align: center;
+}
+
+button {
+  background-color: var(--color-lighter);
+  border-radius: 7px;
+  border: none;
+  height: 50px;
+  width: 200px;
+}
+a {
+  color: var(--color-lighter);
+  text-decoration: none;
+}
+
+@media (min-width: 700px) {
+  .header_text,
+  .header_button {
+    grid-row: 2/3;
+  }
+
+  header {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  header {
+    grid-column: 1/4;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(IMG_8439.JPG);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  #contact_form {
+    gap: 2rem;
+    margin: 10rem;
+  }
+
+  .team_ {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 3rem;
+    margin: 10rem;
+  }
+
+  .team_graphics1 {
+    grid-column: 1/2;
+  }
+  .team_text1 {
+    grid-column: 2/3;
+    margin-top: 10rem;
+  }
+
+  .team_graphics2 {
+    grid-column: 2/3;
+  }
+
+  .team_graphics1 {
+    width: 100%;
+    min-height: 100vh;
+
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .team_graphics2 {
+    width: 100%;
+    min-height: 100vh;
+
+    background-size: cover;
+    /* background-position: 50% 50%; */
+  }
+
+  .team_text2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 10rem;
+  }
+
+  header {
+    grid-column: 1/4;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(IMG_8439.JPG);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .header_text {
+    grid-column: 1/2;
+    margin: 3rem;
+  }
+
+  .header_button {
+    grid-column: 2/3;
+    margin: 3rem;
+  }
+
+  #product {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product_graphics {
+    grid-column: 1/2;
+  }
+
+  .product_text {
+    grid-column: 2/3;
+  }
+}
